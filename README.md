@@ -6,3 +6,5 @@ updating the website every few months when I find time.
 
 https://tlee23.github.io
 
+<img src="https://media.tenor.com/pc6NjnDmlQwAAAAM/kaela-kovalskia-pog.gif" width="800" height="400" />
+
