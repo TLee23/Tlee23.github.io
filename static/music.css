@@ -60,69 +60,6 @@
     justify-content: center;
 }
 
-.card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    color: #242329;
-    text-align: center;
-    border: 3px solid #fff;
-    overflow: hidden;
-}
-.card__data {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-400px);
-    transition: transform .5s;
-}
-.card__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .20s .35s;
-}
-.card__title {
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 5px;
-    background-color: #242329;
-    margin-top: 25px;
-}
-.card__description {
-    padding: 10px;
-    margin-bottom: 15px;
-}
-.card__btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 10px;
-    color: #242329;
-    background-color: #fff;
-    transition: background-color .10s;
-}
-.card__btn:hover {
-    background-color: #242329;
-    color: #fff;
-}
-.card:hover .card__data {
-    transform: translateY(0px);
-}
-.card:hover .card__img {
-    transform: translateX(299px);
-    transition-delay: 0s;
-}
-
-.mystuff {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
 body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -136,3 +73,44 @@ body {
         opacity: 1;
     }
 }
+
+#sentence {
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  #sentence > li, #sentence > ul { display: inline; }
+  
+  #textSlider {
+    overflow: visible !important;
+    text-align: left;
+    display: inline;
+    position: relative;
+    height: 16px;
+  }
+  
+  .adj {
+    white-space: nowrap;
+    list-style: none;
+    position: absolute;
+    line-height: .3em;
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+  .slide-in {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .slide-out {
+    -webkit-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+    
