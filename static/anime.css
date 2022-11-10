@@ -128,6 +128,15 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
